@@ -391,6 +391,21 @@ footer {
   animation: spin 1.2s linear infinite;
 }
 
+.Modal {
+  width: 580px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -416,5 +431,49 @@ footer {
 
   .heading p {
     font-size: 1.5rem;
+  }
+  .ticket-header h2 {
+    font-size: 1.1rem;
+  }
+  .ticket-header h3 {
+    font-size: 1rem;
+  }
+  .ticket-page h2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ticket {
+    gap: 3px;
+    padding: 0;
+  }
+  .status {
+    width: 70px;
+    padding: 2px 6px;
+  }
+  .ticket div:nth-child(1) {
+    font-size: 0.7rem;
+  }
+  .ticket div:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  .ticket .btn-sm {
+    padding: 4px 5px;
+  }
+  .note-date {
+    top: 5px;
+    right: 5px;
+    font-size: 13px;
+  }
+  .btn-back {
+    width: 120px;
+  }
+  .Modal {
+    width: 365px;
+    padding: 10px;
+  }
+  #noteText {
+    margin-bottom: 0;
   }
 }

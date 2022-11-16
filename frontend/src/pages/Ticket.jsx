@@ -12,18 +12,6 @@ import NoteItem from '../components/NoteItem';
 import { useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 
-const customStyles = {
-  content: {
-    width: '600px',
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    position: 'relative',
-  },
-};
 // For binding modal to your appElement
 Modal.setAppElement('#root');
 
@@ -106,7 +94,7 @@ function Ticket() {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
+        className="Modal"
         contentLabel="Add Note"
       >
         <h2>Add Note</h2>
